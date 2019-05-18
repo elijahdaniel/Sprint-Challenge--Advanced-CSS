@@ -1,1 +1,18 @@
 // Mixins Here
+.center-align {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.hide {
+    visibility: hidden;
+    display: none;
+}
+
+//Parametic Mixin
+.btn-style(@bg, @text) {
+    background: @bg;
+    color: @text;
+}
